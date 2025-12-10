@@ -106,7 +106,9 @@ p{
     position: relative;
     z-index: 2;
 }
-
+.micro-photo-mob{
+    display: none;
+}
 
 @media (max-width: 1199px){
     .microsoft-title p {
@@ -137,13 +139,28 @@ p{
     }
 }
 @media (max-width: 767px){
+    .micro-photo-mob{
+        display: block;
+    }
     .microsoft-photo{
+        padding: 12px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+        linear-gradient(86.56deg, rgba(102, 192, 255, 0.05) 0%, rgba(0, 148, 240, 0.05) 19.52%);
+        border: 1.26px solid rgba(102, 192, 255, 0.2);
+        backdrop-filter: blur(12.645739555358887px);
+        border-radius: 18px;
+        max-width: 358px;
+        width: 100%;
+        margin: 50px auto 0;
+    }
+    .micro-photo-desc{
         display: none;
     }
     .microsoft-word-min {
         padding-top: 160px;
         height: 666px;
     }
+
     h1 {
         font-size: 25px;
     }
@@ -333,7 +350,11 @@ p{
         top: 122px;
         height: 771px;
     }
-
+    .accuracy-grad{
+        background-image: url("../img/grad-fon.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 
@@ -396,10 +417,11 @@ p{
     font-weight: 350;
     font-size: 16px;
     line-height: 160%;
+    color: rgba(29, 29, 29, 0.7);
 }
 .generate-info>p b{
-    font-weight: 400;
-
+    font-weight: 500;
+    color: rgba(29, 29, 29, 1);
 }
 .generate-info .btn{
     margin: 0;
